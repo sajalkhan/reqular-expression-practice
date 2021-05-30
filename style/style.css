@@ -1,0 +1,54 @@
+.regex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 100px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.regex > span {
+  position: absolute;
+  -webkit-transform: translate(-2%, -150%);
+          transform: translate(-2%, -150%);
+  font-size: 25px;
+  padding-bottom: 10px;
+}
+
+.regex__input > input {
+  padding: 5px;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+.regex__input > input:hover, .regex__input > input:focus {
+  border: 2px solid green;
+  outline: 0;
+}
+
+.regex__input > button {
+  padding: 7px;
+  margin-left: 5px;
+  color: white;
+  background: red;
+  border-radius: 5px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.regex__result {
+  margin-top: 20px;
+  font-size: 20px;
+  color: green;
+}
+/*# sourceMappingURL=style.css.map */

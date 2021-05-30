@@ -1,0 +1,45 @@
+.regex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  position: relative;
+
+  > span {
+    position: absolute;
+    transform: translate(-2%, -150%);
+    font-size: 25px;
+    padding-bottom: 10px;
+  }
+
+  &__input {
+    > input {
+      padding: 5px;
+      transition: all 0.5s ease-in;
+
+      &:hover,
+      &:focus {
+        border: 2px solid green;
+        outline: 0;
+      }
+    }
+
+    > button {
+      padding: 7px;
+      margin-left: 5px;
+      color: white;
+      background: red;
+      border-radius: 5px;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+    }
+  }
+
+  &__result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: green;
+  }
+}
